@@ -11,6 +11,7 @@ var con = mysql.createConnection({
 
 });
 
+
 con.connect(function(err) {
    if (err) {
        console.log('Error connecting to Db');
@@ -18,6 +19,14 @@ con.connect(function(err) {
    }
    console.log('Connection established');
 });
+
+connection.connect(function (err) {
+    if (err) throw err;
+    console.log("Bamazon")
+    console.log("Please make a selection!")
+        ;
+})
+
 
 //Display All of the Items available for sale. This initial 
 // display, should include the ids, names, and prices of products 
